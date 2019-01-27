@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import SeasonDisplay from './SeasonDisplay1';
 
 class App extends React.Component {
-	state = {
-		lat: null,
-		errorMessage: null
+	constructor(props) {
+		super(props); // to include all functions of Commponent sub class
+		// only time we directly assign state
+		this.state = { lat: null, errorMessage: null }
 	}
 
 	componentDidMount() {
@@ -17,7 +17,7 @@ class App extends React.Component {
 	}
 
 	componentDidUpdate() {
-		console.log("my component was updated")
+		console.log("my component was updated");
 	}
 
 	render() {
@@ -27,7 +27,7 @@ class App extends React.Component {
 		}
 
 		if (!this.state.errorMessage && this.state.lat) {
-			return <SeasonDisplay lat={this.state.lat} />
+			return <div>Latitude: {this.state.lat}</div>
 		}
 		return <div>Loading ...</div>
 	}

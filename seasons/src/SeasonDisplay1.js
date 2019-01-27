@@ -3,21 +3,21 @@ import './SeasonDisplay.css';
 
 const seasonConfig = {
 	summer: { text: "Let's hit the beach!", iconName: 'sun' },
-	winter: { text: "Burr, it is chilly!", iconName: 'snowflake' },
-	season: ''
+	winter: { text: "Burr, it is chilly!", iconName: 'snowflake' }
 }
 
-const setSeason = (lat, month) => {
+const getSeason = (lat, month) => {
 	if (month > 2 && month < 9) {
-		seasonConfig['season'] = lat > 0 ? 'summer' : 'winter';
+		return lat > 0 ? 'summer' : 'winter';
 	} else {
-		seasonConfig['season'] = lat > 0 ? 'winter' : 'summer';
+		return lat > 0 ? 'winter' : 'summer';
 	}
-};
+}
 
 const SeasonDisplay = (props) => {
-	setSeason(props.lat, new Date().getMonth());
-	const { text, iconName, season } = seasonConfig[season]
+	const season = getSeason(props.lat, new Date().getMonth());
+	// const text = season === 'winter' ? "Burr, it is chilly" : "Lets hit the beach";
+	const { text, iconName } = seasonConfig[season]
 
 	return (
 		<div className={`season-display ${season}`}>
