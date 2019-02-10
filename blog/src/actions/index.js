@@ -15,10 +15,13 @@ export const fetchPostsAndUsers = () => async (dispatch, getState) => {
   console.log('fetched posts');
   // find unique userId's, with lodash 
 
-  const user_ids = _.uniq(_.map(getState().posts.data, 'userId'))
-  console.log("user_ids: ", user_ids);
-
-  user_ids.forEach(id => dispatch(fetchUser(id)));
+  // const user_ids = _.uniq(_.map(getState().posts.data, 'userId'))
+  // lodash refactor of line 18 using  _.chain()
+  _.chain(getState().posts.data, 'userId')
+    .map('userId')
+    .uniq()
+    .forEach(id => dispatch(fetchUser(id)))
+    .value();  // like 'execute the above ... '
 }
 
 // ***************************  fetchPosts() *****************************************
