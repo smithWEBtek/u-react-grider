@@ -18,6 +18,8 @@ class UserHeader extends React.Component {
 	}
 }
 
+// ownProps: a reference to props being sent into this component
+// in this case, userId is passed as a prop from PostList
 const mapStateToProps = (state, ownProps) => {
 	return {
 		user: state.users.find(user => user.id === ownProps.userId)
