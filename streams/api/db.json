@@ -1,0 +1,14 @@
+{
+  "streams": [
+    {
+      "title": "RoadRunner",
+      "description": "The Coyote is after you!",
+      "id": 1
+    },
+    {
+      "title": "Elmer Fudd",
+      "description": "Be vair wee quiet.",
+      "id": 2
+    }
+  ]
+}
