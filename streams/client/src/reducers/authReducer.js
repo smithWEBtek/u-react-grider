@@ -2,8 +2,7 @@ import { SIGN_IN, SIGN_OUT, CREATE_STREAM } from '../actions/types';
 
 const INITIAL_STATE = {
   isSignedIn: null,
-  userId: null,
-  streams: []
+  userId: null
 }
 
 export default (state = INITIAL_STATE, action) => {
