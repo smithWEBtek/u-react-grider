@@ -9,6 +9,46 @@
       "title": "Elmer Fudd",
       "description": "Be vair wee quiet.",
       "id": 2
+    },
+    {
+      "title": "Snow Storm",
+      "description": "We will have to clear out the snow today.",
+      "id": 3
+    },
+    {
+      "title": "Lunch",
+      "description": "Soup and salad.",
+      "id": 4
+    },
+    {
+      "title": "Dinner",
+      "description": "Meat and potatoes",
+      "id": 5
+    },
+    {
+      "title": "Buffet",
+      "description": "All you should eat.",
+      "id": 6
+    },
+    {
+      "title": "NewStream",
+      "description": "All about the new stream.",
+      "id": 7
+    },
+    {
+      "title": "BugsBunny",
+      "description": "Old school cartoon.",
+      "id": 8
+    },
+    {
+      "title": "DaffyDuck",
+      "description": "Another old school cartoon.",
+      "id": 9
+    },
+    {
+      "title": "Foghorn Leghorn",
+      "description": "Loud rooster cartoon.",
+      "id": 10
     }
   ]
 }
