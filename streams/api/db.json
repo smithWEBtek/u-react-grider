@@ -23,46 +23,38 @@
     {
       "title": "Buffet",
       "description": "All you should eat.",
+      "userId": "103705189634786833027",
       "id": 6
     },
     {
       "title": "BugsBunny",
       "description": "Old school cartoon.",
+      "userId": "103705189634786833027",
       "id": 8
     },
     {
       "title": "DaffyDuck",
       "description": "Another old school cartoon.",
+      "userId": "103705189634786833027",
       "id": 9
     },
     {
       "title": "Foghorn Leghorn",
       "description": "Loud rooster cartoon.",
+      "userId": "103705189634786833027",
       "id": 10
     },
     {
-      "title": "Madelline",
-      "description": "French cartoon girl.",
+      "title": "TEST1",
+      "description": "zxcvasdf",
       "userId": "103705189634786833027",
       "id": 11
     },
     {
-      "title": "Curry Chicken",
-      "description": "Everyone loves it.",
+      "title": "test2",
+      "description": "zxcvasdfzxcvasdf",
       "userId": "103705189634786833027",
       "id": 12
-    },
-    {
-      "title": "Family picnic",
-      "description": "Burgers, hotdogs and frisbee by the beach.",
-      "userId": "103705189634786833027",
-      "id": 13
-    },
-    {
-      "title": "TV time",
-      "description": "Old movies are best.",
-      "userId": "103705189634786833027",
-      "id": 14
     }
   ]
 }
