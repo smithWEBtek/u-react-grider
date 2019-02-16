@@ -28,18 +28,17 @@ class StreamForm extends React.Component {
 
   onSubmit = (updatedValues) => {
     console.log("[StreamForm]updatedValues: ", updatedValues);
-
     this.props.onSubmit(updatedValues)
   }
 
   render() {
-
+    console.log("initialValues: ", this.props.initialValues);
     return (
-
       <form
         onSubmit={this.props.handleSubmit(this.onSubmit)}
         className="ui form error">
-        <Field name="title"
+        <Field
+          name="title"
           component={this.renderInput}
           label="Enter Title"
         />
